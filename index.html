@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>James Oliver Llena - C:\Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.rw-designer.com/icon-image/18835-256x256x4.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="desktop-bg">
+    <main id="desktop">
+      <div
+        class="window"
+        id="hero-window"
+        style="top: 10%; left: 15%; width: 450px"
+      >
+        <div class="title-bar">
+          <span class="title-text">Welcome.exe</span>
+          <button class="close-btn" data-window="hero-window">×</button>
+        </div>
+        <div class="window-content hero-content">
+          <img
+            src="images/cas-hero-img.png"
+            alt="James Oliver C. Llena"
+            class="hero-image"
+          />
+          <div class="hero-text">
+            <h1>James Oliver C. Llena</h1>
+            <h2>Front-End Developer</h2>
+            <p>
+              // My aspiration is to inspire others through web design and
+              development.
+            </p>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <div
+        class="window hidden"
+        id="about-window"
+        style="top: 20%; left: 40%; width: 400px"
+      >
+        <div class="title-bar">
+          <span class="title-text">about_me.txt</span>
+          <button class="close-btn" data-window="about-window">×</button>
+        </div>
+        <div class="window-content">
+          <h3>// EDUCATION</h3>
+          <p>
+            <strong>STI College Lucena (2020-2025)</strong><br />> Pursuing
+            degree in Information Technology.
+          </p>
+          <p>
+            <strong>ESTI Marinduque (2016-2019)</strong><br />> Foundational
+            skills & passion for code.
+          </p>
+          <hr />
+          <h3>// SKILLS.LOG</h3>
+          <h4>[ Tech Stacks & Designs ]</h4>
+          <p>
+            HTML, CSS, JavaScript, Bootstrap, Tailwind, React, Node.js,
+            Express.js, Postman, RESTful API, Session Mngmt, Java, MySQL,
+            Database Design, CRUD Ops
+          </p>
+          <h4>[ Tools ]</h4>
+          <p>
+            Git, Github, VSCode, NPM, Browser DevTools, Google API, HTML Canvas,
+            Local Storage
+          </p>
+          <h4>[ Soft Skills ]</h4>
+          <p>Adaptability, Time Management, Communication, Problem-Solving</p>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <div
+        class="window hidden"
+        id="projects-window"
+        style="top: 25%; left: 10%; width: 420px"
+      >
+        <div class="title-bar">
+          <span class="title-text">C:\Projects</span>
+          <button class="close-btn" data-window="projects-window">×</button>
+        </div>
+        <div class="window-content projects-content">
+          <div class="project-item">
+            <img src="https://i.imgur.com/RjMRqmK.png" alt="Project icon" />
+            <div>
+              <h4>DRE_PC_Plaza.jar</h4>
+              <p>Ecommerce site. Built with React, Node.js, MySQL.</p>
+              <a href="#" target="_blank">[view_live]</a>
+              <a href="#" target="_blank">[view_repo]</a>
+            </div>
+          </div>
+          <div class="project-item">
+            <img src="https://i.imgur.com/RjMRqmK.png" alt="Project icon" />
+            <div>
+              <h4>PortfolioS_v1.html</h4>
+              <p>Collaborative portfolio. Built with HTML, CSS, JS.</p>
+              <a href="#" target="_blank">[view_live]</a>
+              <a href="#" target="_blank">[view_repo]</a>
+            </div>
+          </div>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+
+      <div
+        class="window hidden"
+        id="contact-window"
+        style="top: 40%; left: 50%; width: 350px"
+      >
+        <div class="title-bar">
+          <span class="title-text">Send Mail</span>
+          <button class="close-btn" data-window="contact-window">×</button>
+        </div>
+        <div class="window-content">
+          <form id="contact-form" class="contact-form">
+            <label for="email">TO:</label>
+            <input type="text" value="james.oliver.llena@email.com" disabled />
+            <label for="subject">SUBJECT:</label>
+            <input type="text" id="subject" name="subject" required />
+            <label for="message">MESSAGE:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="win-button">Send</button>
+          </form>
+        </div>
+        <div class="resize-handle"></div>
+      </div>
+    </main>
+
+    <footer class="taskbar">
+      <div id="start-menu" class="start-menu hidden">
+        <div class="start-menu-sidebar">
+          <span>CasCodes '24</span>
+        </div>
+        <ul class="start-menu-items">
+          <li data-window="projects-window">
+            <img src="https://i.imgur.com/RjMRqmK.png" alt="Folder" /><span
+              ><u>P</u>rojects</span
+            >
+          </li>
+          <li data-window="about-window">
+            <img src="https://i.imgur.com/RjMRqmK.png" alt="Document" /><span
+              ><u>A</u>bout Me</span
+            >
+          </li>
+          <li data-window="contact-window">
+            <img
+              src="https://64.media.tumblr.com/7d457e49acb4aa89272fdced63b92f07/d1b86bf1cdd7d019-1c/s540x810/04875bf3bf64f698907a67ee724069d451b2a280.png"
+              alt="Mail"
+            /><span><u>C</u>ontact</span>
+          </li>
+          <hr />
+          <li id="shutdown-btn">
+            <img
+              src="https://64.media.tumblr.com/4e932aabdfe572f340dbe32cfc06f1cb/840b4b6888f1f93f-e3/s540x810/c3d700cbea3465ba7c8215250e988acb638676e8.png"
+              alt="Shut Down"
+            /><span>Shut <u>D</u>own...</span>
+          </li>
+        </ul>
+      </div>
+      <nav class="taskbar-nav">
+        <button class="start-btn">
+          <img
+            src="https://www.rw-designer.com/icon-image/18835-256x256x4.png"
+            alt="Start"
+          />Start
+        </button>
+        <div class="divider"></div>
+        <button class="taskbar-item active" data-window="hero-window">
+          Welcome.exe
+        </button>
+        <button class="taskbar-item" data-window="about-window">
+          about_me.txt
+        </button>
+        <button class="taskbar-item" data-window="projects-window">
+          C:\Projects
+        </button>
+        <button class="taskbar-item" data-window="contact-window">
+          Send Mail
+        </button>
+      </nav>
+      <div class="taskbar-clock" id="clock"></div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
